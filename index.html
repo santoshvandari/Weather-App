@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css"/>
+   <script defer src="script.js"></script>
+    <title>Weather Information Application</title>
+</head>
+<body>
+    <main>
+    <div class="container">
+        <div class="search-city">
+            <input type="text" placeholder="Enter the City" id="inputvalue"/>
+            <button type="submit" id="submit">Search</button>
+        </div>
+        <h1>Weather Information of <span id="city">City</span></h1>
+        <div class="cards">
+            <div class="card card1">
+                <h2>Temperature</h2>
+                <p><span id="Temperature"></span>&#8451</p>
+            </div>
+            <div class="card card1">
+                <h2>Humidity</h2>
+                <p><span id="Humidity"></span>m/s</p>
+            </div>
+            <div class="card card1">
+                <h2>Wind</h2>
+                <p><span id="wind"></span>km/hr</p>
+            </div>
+        </div>
+        <div class="other">
+            <h1>Other Info</h1>
+            <table>
+                <tr>
+                    <th>City</th>
+                    <th>Cloud PCT</th>
+                    <th>Wind Degree</th>
+                    <th>Max Temp.</th>
+                    <th>Min Temp.</th>
+                    <th>Sunrise</th>
+                    <th>Sunset</th>
+                </tr>
+                <tr>
+                    <td id="InfoCity"></td>
+                    <td id="cloudPCT"></td>
+                    <td id="windDegree"></td>
+                    <td id="maxTemp"></td>
+                    <td id="minTemp"></td>
+                    <td id="sunrise"></td>
+                    <td id="sunset"></td>
+                    
+                </tr>
+            </table>
+        </div>
+        <div id="errorMessage">
+            Sorry! City didn't Found
+            <p>Please Enter Another City</p>
+        </div>
+    </div>
+    </main>
+    <footer>
+        <p>Designed By <a href="https://www.github.com/santoshvandari" target="_blank"> Santosh Bhandari</a></p>
+    </footer>    
+</body>
+</html>
